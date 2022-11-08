@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>To Do List App</title>
+</head>
+
+<body class="bg-gradient-to-r from-orange-200 to-yellow-200 flex justify-center items-center h-full w-full">
+  <div class="p-8">
+    <h1 class="text-center text-3xl font-bold">Pooh's To Do List</h1>
+      <div class="flex justify-center p-8">
+        <form class="flex flex-row" id="new-task-form">
+        <input type="text" class="rounded-l-full px-4 py-2 placeholder:text-orange-400 bg-orange-100"
+          id="new-task-input" placeholder="Enter Todo" />
+
+        <button class="bg-orange-500 text-white rounded-md px-4 py-2 cursor-pointer rounded-r-full"
+          id="new-task-submit">
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+          </svg>
+        </button>
+
+      </div> 
+
+      <div id="errormsg" class="text-orange-500 text-xl font-bold text-center mb-4"></div>
+      </form>
+
+      <div class="bg-white rounded-lg p-4 w-full">
+        <div>
+          <h1 class="font-bold text-xl flex">Todo's</h1>
+          <!-- <small class="text-xs" id="todo-number">2 todos pending, 1 completed</small> -->
+
+        </div>
+        <div class="mt-4">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-orange-500 text-orange-50">
+                <th class="text-center py-2 px-20 rounded-tl-lg">
+                  Details
+                </th>
+
+                <th class="text-center py-2 px-20 rounded-tr-lg">
+                  Action
+
+                </th>
+              </tr>
+            </thead>
+            <tbody id="todo-list">
+
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+      <!--TO do table-->
+    </div>
+    <!--Header part-->
+    <script src="script.js"></script>
+</body>
+
+</html>

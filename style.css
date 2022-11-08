@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inactive{
+    text-decoration: line-through;
+}
+
+td{
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left:5rem;
+    padding-right:5rem;
+}
