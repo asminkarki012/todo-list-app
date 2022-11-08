@@ -11,12 +11,16 @@ function addTask(event) {
     const errorMsg = document.getElementById("errormsg");
     errorMsg.innerHTML = "Please Insert task first!!!!";
   } else {
+
+    const errorMsg = document.getElementById("errormsg");
+    errorMsg.innerHTML = "";
     let task = { name: todoTask.value, status: true };
     tasks.push(task);
     myTasks.push(task);
     todoTask.value = "";
     setData();
     displayTask(tasks);
+    
   }
 }
 
