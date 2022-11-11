@@ -13,7 +13,7 @@
 
 <body class="bg-gradient-to-r from-orange-200 to-yellow-200 flex justify-center items-center h-full w-full">
   <div class="p-8">
-    <h1 class="text-center text-3xl font-bold">Pooh's To Do List</h1>
+    <h1 class="text-center text-3xl font-bold">To Do List</h1>
       <div class="flex justify-center p-8">
         <form class="flex flex-row" id="new-task-form">
         <input type="text" class="rounded-l-full px-4 py-2 placeholder:text-orange-400 bg-orange-100"
@@ -27,11 +27,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
           </svg>
         </button>
-
       </div> 
 
       <div id="errormsg" class="text-orange-500 text-xl font-bold text-center mb-4"></div>
       </form>
+
+        <button class="flex mx-auto text-white bg-orange-500 p-2 my-4 rounded-md" onclick="clearLocalStorage()">Clear the day</button>
 
       <div class="bg-white rounded-lg p-4 w-full">
         <div>
