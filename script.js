@@ -142,21 +142,6 @@ const displayTask = () => {
       }
     });
 
-  document.addEventListener("click", (event) => {
-  const isClickInside = newtodoData.contains(event.target) || editBtn.contains(event.target);
-
-  if (!isClickInside && !flag) {
-    newtodoData.setAttribute("contenteditable", "false");
-    flag = true;
-    const editedText = document.getElementById(`todo${myTasks[i].id}`);
-    newtodoData.innerHTML = editedText.textContent;
-    myTasks[i].name = editedText.textContent;
-    setData();
-    editBtn.classList.remove("text-blue-500");
-  }
-});
-
-
     newtodoDataBtn.appendChild(editBtn);
 
     //button for trash
